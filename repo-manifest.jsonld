@@ -10,7 +10,7 @@
       "git:hexsha": "9ab6dee710aa384e02ec5e9e2cfeadb2f35abf2a",
       "repolex:parseStatus": "parsed",
       "git:tagName": "v4.6.0",
-      "repolex:parsedAt": "2026-04-22T14:44:25.093593+00:00"
+      "repolex:parsedAt": "2026-04-22T14:55:06.888318+00:00"
     },
     {
       "@id": "https://repolex.ai/r/clap-rs/clap/commit/be91c5f2f533b8fe0c3c5d05d6a8f5e32837c872",
