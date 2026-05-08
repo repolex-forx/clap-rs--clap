@@ -1,0 +1,7 @@
+[2026-05-08T21:40:22Z] === AST ITERATION 1 START | repo=clap-rs/clap sha=20aac9d4 ===
+[2026-05-08T21:40:22Z] [iter=1] PHASE START: ast repo=clap-rs/clap sha=20aac9d4
+[2026-05-08T21:40:22Z] [iter=1] Building AST aggregate chunks
+[2026-05-08T21:44:12Z] [iter=1] AST chunks built count=1 triples=2811586
+[2026-05-08T21:44:12Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/20aac9d46e0852292bd43d845b6d9cb69c598c9e/.complete
+[2026-05-08T21:44:12Z] [iter=1] PHASE END: ast elapsed_s=230 elapsed_min=3.8
+[2026-05-08T21:44:12Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
