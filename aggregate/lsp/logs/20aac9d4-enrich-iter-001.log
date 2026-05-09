@@ -1,0 +1,91 @@
+[2026-05-09T04:36:48Z] === ENRICH ITERATION 1 START | repo=clap-rs/clap sha=20aac9d4 ===
+[2026-05-09T04:36:48Z] [iter=1] PHASE START: enrich repo=clap-rs/clap sha=20aac9d4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/20aac9d4-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/20aac9d46e0852292bd43d845b6d9cb69c598c9e.nq.gz
+[2026-05-09T04:36:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-09T04:37:21Z] [iter=1] AST store loaded triples=2811584 load_secs=22 mem_mb=882 MB
+[2026-05-09T04:37:21Z] [iter=1] Step 2: Finding LSP targets mem_mb=882 MB
+[2026-05-09T04:37:26Z] [iter=1] LSP targets found call_sites=29370 imports=730 extends=0 implements=387 secs=5
+[2026-05-09T04:37:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=882 MB
+[2026-05-09T04:37:48Z] [iter=1] Position index built positions=198604 nodes_with_types=240580 secs=18 mem_mb=882 MB
+[2026-05-09T04:37:48Z] [iter=1] Step 3: Starting LSP resolution mem_mb=882 MB already_completed_types=[] already_completed_files=0
+[2026-05-09T04:37:48Z] [iter=1] Resolving target type target_type=call_site count=29370
+[2026-05-09T04:38:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=tests/builder/multiple_occurrences.rs
+[2026-05-09T04:46:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=4 resolved=496 errors=431 current=examples/derive_ref/flatten_hand_args.rs
+[2026-05-09T04:47:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=5 resolved=501 errors=471 current=tests/builder/help.rs
+[2026-05-09T04:52:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.2 files_done=9 resolved=703 errors=761 current=src/bin/stdio-fixture.rs
+[2026-05-09T04:54:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=10 resolved=720 errors=849 current=examples/tutorial_derive/04_03_relations.rs
+[2026-05-09T04:59:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=15 resolved=729 errors=1093 current=clap_mangen/src/render.rs
+[2026-05-09T05:03:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=16 resolved=801 errors=1301 current=tests/builder/require.rs
+[2026-05-09T05:03:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=18 resolved=806 errors=1329 current=clap_complete/examples/exhaustive.rs
+[2026-05-09T05:07:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.0 files_done=19 resolved=809 errors=1539 current=tests/builder/env.rs
+[2026-05-09T05:14:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.2 files_done=22 resolved=1075 errors=1918 current=tests/builder/version.rs
+[2026-05-09T05:16:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=24 resolved=1230 errors=2018 current=examples/tutorial_builder/04_02_validate.rs
+[2026-05-09T05:18:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=30 resolved=1278 errors=2086 current=clap_builder/src/parser/parser.rs
+[2026-05-09T05:27:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.0 files_done=31 resolved=1562 errors=2593 current=clap_builder/src/output/textwrap/mod.rs
+[2026-05-09T05:30:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.3 files_done=33 resolved=1620 errors=2715 current=tests/derive/flags.rs
+[2026-05-09T05:34:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.8 files_done=36 resolved=1702 errors=2950 current=clap_complete/src/env/shells.rs
+[2026-05-09T05:35:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.9 files_done=39 resolved=1782 errors=3007 current=tests/builder/app_settings.rs
+[2026-05-09T05:37:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.6 files_done=41 resolved=1874 errors=3092 current=tests/builder/possible_values.rs
+[2026-05-09T05:42:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.3 files_done=43 resolved=1940 errors=3335 current=tests/derive/value_enum.rs
+[2026-05-09T05:42:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=49 resolved=2001 errors=3365 current=clap_bench/benches/rustup.rs
+[2026-05-09T05:48:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.8 files_done=50 resolved=2002 errors=3675 current=tests/builder/opts.rs
+[2026-05-09T05:55:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.2 files_done=55 resolved=2194 errors=4012 current=clap_complete/src/aot/shells/elvish.rs
+[2026-05-09T05:55:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.1 files_done=56 resolved=2214 errors=4058 current=tests/builder/derive_order.rs
+[2026-05-09T06:01:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.6 files_done=60 resolved=2311 errors=4351 current=clap_complete/tests/testsuite/fish.rs
+[2026-05-09T06:02:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.2 files_done=62 resolved=2312 errors=4382 current=clap_complete/src/aot/shells/fish.rs
+[2026-05-09T06:03:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=63 resolved=2347 errors=4471 current=clap_builder/src/parser/matches/arg_matches.rs
+[2026-05-09T06:07:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=64 resolved=2502 errors=4661 current=clap_builder/src/error/mod.rs
+[2026-05-09T06:10:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=65 resolved=2553 errors=4839 current=clap_mangen/tests/testsuite/main.rs
+[2026-05-09T06:11:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.4 files_done=68 resolved=2562 errors=4867 current=tests/derive/groups.rs
+[2026-05-09T06:13:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.5 files_done=70 resolved=2600 errors=4978 current=examples/find.rs
+[2026-05-09T06:14:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.7 files_done=71 resolved=2606 errors=5045 current=tests/builder/default_missing_vals.rs
+[2026-05-09T06:15:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.3 files_done=76 resolved=2609 errors=5076 current=examples/pacman.rs
+[2026-05-09T06:16:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.8 files_done=77 resolved=2616 errors=5154 current=tests/builder/positionals.rs
+[2026-05-09T06:19:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.9 files_done=82 resolved=2665 errors=5320 current=clap_complete/tests/testsuite/zsh.rs
+[2026-05-09T06:21:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.9 files_done=84 resolved=2742 errors=5424 current=clap_complete/src/aot/shells/bash.rs
+[2026-05-09T06:23:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.3 files_done=85 resolved=2779 errors=5500 current=clap_complete_nushell/src/lib.rs
+[2026-05-09T06:24:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.8 files_done=86 resolved=2818 errors=5580 current=clap_complete/src/aot/shells/shell.rs
+[2026-05-09T06:25:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.3 files_done=88 resolved=2868 errors=5607 current=clap_builder/src/output/usage.rs
+[2026-05-09T06:27:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.0 files_done=89 resolved=2959 errors=5748 current=tests/builder/empty_values.rs
+[2026-05-09T06:29:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.8 files_done=93 resolved=2971 errors=5843 current=tests/builder/hidden_args.rs
+[2026-05-09T06:30:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.3 files_done=105 resolved=2984 errors=5872 current=examples/tutorial_derive/04_04_custom.rs
+[2026-05-09T06:30:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.8 files_done=107 resolved=2989 errors=5899 current=clap_mangen/src/lib.rs
+[2026-05-09T06:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.4 files_done=108 resolved=3047 errors=5980 current=examples/cargo-example-derive.rs
+[2026-05-09T06:34:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.2 files_done=113 resolved=3084 errors=6078 current=src/_derive/mod.rs
+[2026-05-09T06:34:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.0 files_done=117 resolved=3127 errors=6117 current=clap_complete_nushell/examples/test.rs
+[2026-05-09T06:38:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.2 files_done=118 resolved=3129 errors=6290 current=tests/derive/flatten.rs
+[2026-05-09T06:39:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.7 files_done=121 resolved=3132 errors=6369 current=tests/derive/default_value.rs
+[2026-05-09T06:40:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.6 files_done=126 resolved=3221 errors=6414 current=clap_complete/src/engine/candidate.rs
+[2026-05-09T06:41:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.4 files_done=131 resolved=3247 errors=6458 current=tests/derive/doc_comments_help.rs
+[2026-05-09T06:42:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.2 files_done=133 resolved=3251 errors=6501 current=tests/builder/arg_matches.rs
+[2026-05-09T06:45:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.6 files_done=137 resolved=3354 errors=6679 current=tests/builder/global_args.rs
+[2026-05-09T06:46:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.8 files_done=142 resolved=3398 errors=6743 current=clap_complete/src/aot/shells/powershell.rs
+[2026-05-09T06:47:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.5 files_done=143 resolved=3411 errors=6779 current=examples/tutorial_builder/03_02_option_mult.rs
+[2026-05-09T06:47:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.2 files_done=145 resolved=3471 errors=6814 current=clap_builder/src/util/escape.rs
+[2026-05-09T06:49:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.3 files_done=153 resolved=3486 errors=6872 current=tests/derive/author_version_about.rs
+[2026-05-09T06:49:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.1 files_done=158 resolved=3539 errors=6915 current=clap_builder/src/builder/arg_settings.rs
+[2026-05-09T06:50:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.6 files_done=163 resolved=3577 errors=6945 current=clap_derive/src/utils/spanned.rs
+[2026-05-09T06:51:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.6 files_done=165 resolved=3608 errors=6998 current=clap_builder/src/mkeymap.rs
+[2026-05-09T06:52:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.5 files_done=168 resolved=3641 errors=7043 current=examples/tutorial_builder/03_06_required.rs
+[2026-05-09T06:53:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.7 files_done=173 resolved=3694 errors=7108 current=tests/builder/unicode.rs
+[2026-05-09T06:54:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.3 files_done=183 resolved=3715 errors=7140 current=tests/builder/borrowed.rs
+[2026-05-09T06:54:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.9 files_done=186 resolved=3724 errors=7170 current=examples/git-derive.rs
+[2026-05-09T06:55:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.5 files_done=190 resolved=3764 errors=7201 current=tests/derive/app_name.rs
+[2026-05-09T06:55:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.0 files_done=195 resolved=3804 errors=7230 current=clap_bench/benches/complex.rs
+[2026-05-09T06:56:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.8 files_done=197 resolved=3815 errors=7268 current=examples/escaped-positional-derive.rs
+[2026-05-09T06:57:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.3 files_done=199 resolved=3819 errors=7295 current=tests/builder/command.rs
+[2026-05-09T06:57:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.1 files_done=206 resolved=3845 errors=7338 current=clap_complete/tests/testsuite/general.rs
+[2026-05-09T06:58:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.7 files_done=212 resolved=3866 errors=7370 current=clap_builder/src/builder/ext.rs
+[2026-05-09T06:59:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.0 files_done=216 resolved=3875 errors=7439 current=src/_cookbook/pacman.rs
+[2026-05-09T07:00:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.7 files_done=221 resolved=3890 errors=7474 current=clap_builder/src/output/fmt.rs
+[2026-05-09T07:01:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.2 files_done=231 resolved=3942 errors=7501 current=examples/tutorial_derive/02_app_settings.rs
+[2026-05-09T07:01:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.7 files_done=241 resolved=3960 errors=7528 current=tests/derive_ui/skip_flatten.rs
+[2026-05-09T07:02:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.2 files_done=300 resolved=4007 errors=7555 current=examples/tutorial_derive/03_06_optional.rs
+[2026-05-09T07:02:20Z] [iter=1] Target type resolved target_type=call_site resolved=4013 errors=7569 secs=8672 mem_mb=882 MB
+[2026-05-09T07:02:20Z] [iter=1] Resolving target type target_type=import_statement count=730
+[2026-05-09T07:02:33Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=145.7 files_done=34 resolved=149 errors=0 current=clap_builder/src/output/help_template.rs
+[2026-05-09T07:02:40Z] [iter=1] Target type resolved target_type=import_statement resolved=455 errors=0 secs=20 mem_mb=882 MB
+[2026-05-09T07:02:40Z] [iter=1] Resolving target type target_type=implements_clause count=387
+[2026-05-09T07:02:55Z] [iter=1] Target type resolved target_type=implements_clause resolved=343 errors=0 secs=15 mem_mb=882 MB
+[2026-05-09T07:03:20Z] [iter=1] Step 5: Writing final enrichment file triples=124570
+[2026-05-09T07:03:23Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/20aac9d46e0852292bd43d845b6d9cb69c598c9e.nq.gz size_kb=2706
+[2026-05-09T07:03:23Z] [iter=1] PHASE END: enrich elapsed_s=8794 elapsed_min=146.6 total_triples=124570
